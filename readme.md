@@ -12,8 +12,6 @@ This is a responsive developer portfolio website **exclusively optimized for lan
 
 ## 📸 Screenshots
 
-### 💻 Folder Structure in VS Code
-
 ![screenshot](home-card.png)
 ![screenshot](experties.png)
 ![screenshot](footer.png)
@@ -28,7 +26,7 @@ This is a responsive developer portfolio website **exclusively optimized for lan
 ## ⚠️ Note
 
 🚫 Not for portrait mobile users.  
-✅ Best viewed in landscape mode.
+✅ Best viewed in landscape mode. mostly but its a only dumy project.
 
 ---
 
