@@ -2,6 +2,8 @@
 
 > A practice portfolio website created by **Samar Abbasi**, focused exclusively on **landscape devices** (desktop, laptop, tablet).
 
+<h1>Note</h1> we are still working on it!
+
 ---
 
 ## 🔗 Live Preview
