@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend developer portfolio website with clean UI/UX design, multiple pages, and creative layout. Order now to get your custom website built." />
+  <meta name="keywords" content="personal portfolio website, UI design, UX design, portfolio template, GitHub projects, HTML CSS JavaScript projects, frontend development" />
+  <meta name="author" content="Abbasi-Codes-Hub" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Personal Portfolio Website" />
+  <meta property="og:description" content="Showcasing frontend web development, UX/UI design, and creative personal branding. Explore projects and contact now." />
+  <meta property="og:image" content="https://yourwebsite.com/images/portfolio-preview.png" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Frontend Developer Portfolio | UI/UX Designer" />
+  <meta name="twitter:description" content="Creative frontend developer with responsive and user-focused design skills. Check out the work and let's collaborate!" />
+  <meta name="twitter:image" content="https://yourwebsite.com/images/portfolio-preview.png" />
+  <meta name="twitter:site" content="@yourTwitterHandle" />
+     <!-- for mobile collaborate -->
+  <meta name="theme-color" content="#0077cc" />
+    <!-- Favicon -->
+  <link rel="icon" href="../logo/f-icon.png" type="image/png" />
+    <!-- Optional .ico fallback -->
+  <link rel="shortcut icon" href="../logo/f-icon.png" type="image/png" />
+  <!-- Add this in your <head> section -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Portfolio Website - Frontend Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-reviews.css">
+  <link rel="stylesheet" href="email-subscription.css">
+  <link rel="stylesheet" href="brands.css">
+  <link rel="stylesheet" href="footers.css">
+</head>
+<body>
+  <div class="banner-container">
+    <div class="navbaar">
+        <div class="logo"><span class="M">M</span><span class="alik">alik</span><b id="htphon">-</b><span id="decor">Develo</span><span class="p">p</span></div>
+        <ul class="nav-options" id="baar-options">
+          <li><a href="../main-code/home.html">
+            <div class="home icon-header"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM11 13V19H13V13H11Z"></path></svg><span class="tooltip">home  </span></div></a></li>
+          <li><a href="#">
+            <div class="cv icon-header">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 1L21.5 6.5V17.5L12 23L2.5 17.5V6.5L12 1ZM6.49896 9.97089L11 12.5768V17.6252H13V12.5768L17.501 9.9709L16.499 8.24005L12 10.8447L7.50104 8.24004L6.49896 9.97089Z" class="icon-header"></path></svg><span class="tooltip">Download cv   </span>
+            </div></a></li>
+          <li><a href="../our team/out-team.html" target="_blank">
+          <div class="our-team icon-header"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM17.3628 15.2332C20.4482 16.0217 22.7679 18.7235 22.9836 22H20C20 19.3902 19.0002 17.0139 17.3628 15.2332ZM15.3401 12.9569C16.9728 11.4922 18 9.36607 18 7C18 5.58266 17.6314 4.25141 16.9849 3.09687C19.2753 3.55397 21 5.57465 21 8C21 10.7625 18.7625 13 16 13C15.7763 13 15.556 12.9853 15.3401 12.9569Z"></path></svg><span class="tooltip">Our Team  </span>
+          </div></a></li>
+          <li><a href="#">
+          <div class="project icon-header">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></path></svg><span class="tooltip">projects  </span>
+          </div></a></li>
+          <li><a href="../blog/blog.html" target="_blank">
+          <div class="blog icon-header">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M4.7134 7.12811L4.46682 7.69379C4.28637 8.10792 3.71357 8.10792 3.53312 7.69379L3.28656 7.12811C2.84706 6.11947 2.05545 5.31641 1.06767 4.87708L0.308047 4.53922C-0.102682 4.35653 -0.102682 3.75881 0.308047 3.57612L1.0252 3.25714C2.03838 2.80651 2.84417 1.97373 3.27612 0.930828L3.52932 0.319534C3.70578 -0.106511 4.29417 -0.106511 4.47063 0.319534L4.72382 0.930828C5.15577 1.97373 5.96158 2.80651 6.9748 3.25714L7.69188 3.57612C8.10271 3.75881 8.10271 4.35653 7.69188 4.53922L6.93228 4.87708C5.94451 5.31641 5.15288 6.11947 4.7134 7.12811ZM3.06361 21.6132C4.08854 15.422 6.31105 1.99658 21 1.99658C19.5042 4.99658 18.5 6.49658 17.5 7.49658L16.5 8.49658L18 9.49658C17 12.4966 14 15.9966 10 16.4966C7.33146 16.8301 5.66421 18.6635 4.99824 21.9966H3C3.02074 21.8722 3.0419 21.7443 3.06361 21.6132Z"></path></svg><span class="tooltip">blog  </span>
+          </div></a></li>
+          <li><a href="../about us/about-us.html" target="_blank">
+          <div class="about-us icon-header">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7 2V22H3V2H7ZM9 2H19.0049C20.1068 2 21 2.89821 21 3.9908V20.0092C21 21.1087 20.1074 22 19.0049 22H9V2ZM22 6H24V10H22V6ZM22 12H24V16H22V12ZM15 12C16.1046 12 17 11.1046 17 10C17 8.89543 16.1046 8 15 8C13.8954 8 13 8.89543 13 10C13 11.1046 13.8954 12 15 12ZM12 16H18C18 14.3431 16.6569 13 15 13C13.3431 13 12 14.3431 12 16Z"></path></svg><span class="tooltip">About us  </span>
+          </div></a></li>
+          <li><a href="../contact-us/contact.html" target="_blank">
+          <div class="contact icon-header">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM20 17H24V19H20V17ZM17 12H24V14H17V12ZM19 7H24V9H19V7Z"></path></svg><span class="tooltip">Contact us  </span>
+          </div></a></li>
+        </ul>
+  <div class=" icon-head">
+        <a href=""><button type="button" class="btn">Get started<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 1L13.001 4.06201C16.6192 4.51365 19.4869 7.38163 19.9381 11L23 11V13L19.938 13.001C19.4864 16.6189 16.6189 19.4864 13.001 19.938L13 23H11L11 19.9381C7.38163 19.4869 4.51365 16.6192 4.06201 13.001L1 13V11L4.06189 11C4.51312 7.38129 7.38129 4.51312 11 4.06189L11 1H13ZM12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10Z"></path></svg></button></a>
+  </div>
+  </div>
+  <div class="banner ">
+    <img src="../assests/background.jpg" alt="Portfolio website background image" srcset="" width="100%">
+    <div class="container-author" >
+      <img src="../assests/author-img.jpg" alt="" style="height: 9rem ; width:9rem; border-radius:50% ; margin-top:1rem;">
+      <h1>Abbasi-codes-hub</h1>
+       <h3 id="title"></h3>
+      <h2>Frontend Engineer | UI/UX Designer | Digital Experience Architect</h2>
+      <p class="information">I’m Zahid Malik — a Frontend Developer who helps businesses turn ideas into fast, responsive, and user-friendly web interfaces. I solve real-world problems with clean HTML, CSS, JavaScript,its frameworks, and strong UI/UX design. My focus: better design, better user experience, better results.</p>
+      <button type="button" class="btn alignment-btn">Visit-GitHub</button>
+      <button type="button" class="btn alignment-btn2">Vsit-Fiverr</button>
+    </div>
+    <div class="list-social-icons">
+  <ol class="social-icons">
+    <li>
+      <a href="#">
+        <span class="tooltip-text">Instagram</span>
+        <img src="../social-media-icons/instagram.png" alt="instagram-account">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="tooltip-text">LinkedIn</span>
+        <img src="../social-media-icons/linkdin.png" alt="linkdin-account">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="tooltip-text">Telegram</span>
+        <img src="../social-media-icons/telegram.png" alt="telegram-account">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="tooltip-text">Twitter</span>
+        <img src="../social-media-icons/twiter.png" alt="twiter-account">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="tooltip-text">Facebook</span>
+        <img src="../social-media-icons/facebook.png" alt="facbook-business-account">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="tooltip-text">YouTube</span>
+        <img src="../social-media-icons/youtube.png" alt="youtube-account">
+      </a>
+    </li>
+  </ol>
+</div>
+<!-- Paste this below your banner -->
+<section class="services-section" data-aos="fade-up">
+  <h2 class="section-title" data-aos="fade-right">My Frontend Expertise</h2>
+  <p class="section-subtitle" data-aos="fade-right" data-aos-delay="100">Pixel-Perfect. Responsive. Modern UI/UX.</p>
+
+  <div class="services-grid">
+    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>HTML5 & Semantic Layout</h3>
+      <p>Clean, SEO-friendly code structure using semantic HTML for accessibility and performance.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+      <h3>CSS3 & Modern Styling</h3>
+      <p>Advanced layouts with Flexbox, Grid, Animations, Transitions & modern 3D visual effects.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+      <h3>Responsive Design</h3>
+      <p>Optimized layouts for all devices using Media Queries and Mobile-First Design strategy.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+      <h3>JavaScript & DOM</h3>
+      <p>Dynamic UI behavior with vanilla JS, events, API calls, and interactive front-end logic.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+      <h3>React Development</h3>
+      <p>Component-based architecture, state management, and reusable UI for scalable apps.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+      <h3>Performance Optimization</h3>
+      <p>Optimizing load speed, minimizing code, lazy loading & using best coding practices.</p>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section" data-aos="fade-up" data-aos-delay="512">
+  <h2>My Skills & Expertise</h2>
+  <div class="skills-container">
+    <div class="skill" data-percentage="90" data-name="HTML" data-aos="zoom-in" data-aos-delay="100">
+      <svg class="progress-ring" width="120" height="120">
+        <circle class="progress-ring__circle-bg" stroke="#eee" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+        <circle class="progress-ring__circle" stroke="#FF5733" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+      </svg>
+      <div class="skill-info">
+        <span class="skill-name">HTML</span>
+        <span class="skill-percent">0%</span>
+      </div>
+    </div>
+
+    <div class="skill" data-percentage="85" data-name="CSS" data-aos="zoom-in" data-aos-delay="200">
+      <svg class="progress-ring" width="120" height="120">
+        <circle class="progress-ring__circle-bg" stroke="#eee" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+        <circle class="progress-ring__circle" stroke="#337AFF" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+      </svg>
+      <div class="skill-info">
+        <span class="skill-name">CSS</span>
+        <span class="skill-percent">0%</span>
+      </div>
+    </div>
+
+    <div class="skill" data-percentage="80" data-name="JavaScript" data-aos="zoom-in" data-aos-delay="230">
+      <svg class="progress-ring" width="120" height="120">
+        <circle class="progress-ring__circle-bg" stroke="#eee" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+        <circle class="progress-ring__circle" stroke="#F0DB4F" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+      </svg>
+      <div class="skill-info">
+        <span class="skill-name">JavaScript</span>
+        <span class="skill-percent">0%</span>
+      </div>
+    </div>
+
+    <div class="skill" data-percentage="75" data-name="React" data-aos="zoom-in" data-aos-delay="250">
+      <svg class="progress-ring" width="120" height="120">
+        <circle class="progress-ring__circle-bg" stroke="#eee" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+        <circle class="progress-ring__circle" stroke="#61DAFB" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+      </svg>
+      <div class="skill-info">
+        <span class="skill-name">React</span>
+        <span class="skill-percent">0%</span>
+      </div>
+    </div>
+
+    <div class="skill" data-percentage="70" data-name="Node.js" data-aos="zoom-in" data-aos-delay="270">
+      <svg class="progress-ring" width="120" height="120">
+        <circle class="progress-ring__circle-bg" stroke="#eee" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+        <circle class="progress-ring__circle" stroke="#3C873A" stroke-width="10" fill="transparent" r="52" cx="60" cy="60"/>
+      </svg>
+      <div class="skill-info">
+        <span class="skill-name">Node.js</span>
+        <span class="skill-percent">0%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="companies-section" data-aos="fade-up">
+  <h2 class="section-title" data-aos="fade-right">Brands I've Worked With</h2>
+  <div class="companies-carousel"  data-aos="fade-up" data-aos-delay="200">
+    <div class="company-track">
+      <!-- Repeatable company cards -->
+      <div class="company-card">Google</div>
+      <div class="company-card">Apple</div>
+      <div class="company-card">Microsoft</div>
+      <div class="company-card">Netflix</div>
+      <div class="company-card">Airbnb</div>
+      <div class="company-card">Random Inc.</div>
+      <!-- duplicate set for infinite loop -->
+      <div class="company-card">Google</div>
+      <div class="company-card">Apple</div>
+      <div class="company-card">Microsoft</div>
+      <div class="company-card">Netflix</div>
+      <div class="company-card">Airbnb</div>
+      <div class="company-card">Random Inc.</div>
+    </div>
+  </div>
+</section>
+<section class="faq-section" data-aos="fade-up">
+  <h2 data-aos="fade-right"> Frequently Asked Questions for Frontend Developers</h2>
+
+  <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq1" id="faq1-btn">
+      What are the main differences between HTML, CSS, and JavaScript?
+      <span class="arrow"></span>
+    </button>
+    <div id="faq1" class="faq-answer" role="region" aria-labelledby="faq1-btn">
+      <p><strong>HTML</strong> provides the structure of a webpage, defining elements like headings, paragraphs, and images.</p>
+      <p><strong>CSS</strong> handles the presentation, such as colors, layouts, and fonts to make the site visually appealing.</p>
+      <p><strong>JavaScript</strong> adds interactivity, enabling dynamic features like form validation, animations, and API interactions.</p>
+    </div>
+  </div>
+
+  <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-btn">
+      How can I improve website loading speed?
+      <span class="arrow"></span>
+    </button>
+    <div id="faq2" class="faq-answer" role="region" aria-labelledby="faq2-btn">
+      <p>Optimize images by compressing them without losing quality.</p>
+      <p>Minify CSS and JavaScript files to reduce their size.</p>
+      <p>Use lazy loading for images and components to load them only when visible.</p>
+      <p>Leverage browser caching to store frequently used files locally.</p>
+      <p>Consider using a Content Delivery Network (CDN) to serve content faster worldwide.</p>
+    </div>
+  </div>
+
+  <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-btn">
+      Which frontend framework should I learn first?
+      <span class="arrow"></span>
+    </button>
+    <div id="faq3" class="faq-answer" role="region" aria-labelledby="faq3-btn">
+      <p><strong>React.js</strong> is currently the most popular and widely used for building dynamic, component-based apps.</p>
+      <p><strong>Vue.js</strong> is beginner-friendly and lightweight, great for fast learning and simple projects.</p>
+      <p><strong>Angular</strong> is a full-featured framework ideal for large-scale applications and enterprise solutions.</p>
+      <p>Choose based on your project needs and learning goals; React is usually a strong first choice.</p>
+    </div>
+  </div>
+
+  <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq4" id="faq4-btn">
+      How do I make my website mobile-friendly?
+      <span class="arrow"></span>
+    </button>
+    <div id="faq4" class="faq-answer" role="region" aria-labelledby="faq4-btn">
+      <p>Use responsive design with flexible grids and media queries.</p>
+      <p>Ensure touch-friendly buttons and adequate font sizes.</p>
+      <p>Optimize images for smaller screens and fast loading.</p>
+      <p>Test on multiple devices and screen sizes regularly.</p>
+    </div>
+  </div>
+
+  <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq5" id="faq5-btn">
+      What tools should a frontend developer know?
+      <span class="arrow"></span>
+    </button>
+    <div id="faq5" class="faq-answer" role="region" aria-labelledby="faq5-btn">
+      <p>Version control systems like <strong>Git</strong>.</p>
+      <p>Package managers like <strong>npm</strong> or <strong>Yarn</strong>.</p>
+      <p>Build tools such as <strong>Webpack</strong> or <strong>Vite</strong>.</p>
+      <p>Code editors like <strong>VS Code</strong> with relevant extensions.</p>
+      <p>Browser dev tools for debugging and performance monitoring.</p>
+    </div>
+  </div>
+
+  <div class="call-to-action" data-aos="fade-right" data-aos-delay="300">
+    <h3>Ready to Build Your Stunning Frontend?</h3>
+    <p>Contact me now for professional, clean, and fast frontend development services tailored to your business needs.</p>
+    <button onclick="window.location.href='mailto:youremail@example.com'" class="cta-button">Get a Free Quote</button>
+  </div>
+</section>
+<!-- Review Section Layout -->
+<section class="review-section" data-aos="fade-right">
+  <div class="review-form">
+    <h2>Add Your Review</h2>
+    <input type="text" id="username" placeholder="Your Name" />
+    <textarea id="reviewText" placeholder="Your Review" rows="4"></textarea>
+    <button id="submitReviewBtn">Submit Review</button>
+  </div>
+
+  <div class="review-list" data-aos="fade-left">
+    <h2>Latest Reviews</h2>
+    <div id="reviewsContainer"></div>
+    <div class="see-more">
+      <button id="seeMoreBtn">See More</button>
+    </div>
+  </div>
+</section>
+<!--for subscription part email subscription-->
+<section class="subscription-section" data-aos="fade-down">
+  <div class="subscription-container">
+    <h2>Stay Updated!</h2>
+    <p>Subscribe to our newsletter and never miss updates, tips & exclusive offers.</p>
+    
+    <form id="subscriptionForm">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <div id="subscriptionMessage"></div>
+  </div>
+</section>
+<!-- footer part 1 -->
+ <footer>
+  <div class="footer-part-one">
+    <div class="heading-part-one">Quick-links</div>
+    <ol class="short-links">
+      <li><a href="../blog/blog.html" target="_blank">Blogs</a></li>
+      <li><a href="#">projects</a></li>
+      <li><a href="../our team/out-team.html">our team</a></li>
+      <li><a href="#">Download CV</a></li>
+      <li><a href="https://github.com/Abbasi-codes-hub" target="_blank" rel="noopener noreferrer">Visit GitHub</a></li>
+
+      <li><a href="#">Visit-fiverr</a></li>
+      <li><a href="../about us/about-us.html" target="_blank">About us</a></li>
+      <li><a href="../contact-us/contact.html" target="_blank">contact us</a></li>
+    </ol>
+  </div>
+  <div class="footer-part-two">
+    <div class="heading-part-two">Projects</div>
+    <ol class="list-projects">
+      <li><a href="../projects/game scesior rock paer/index.html" target="_blank">Rock-sessior-paper</a></li>
+      <li><a href="../projects/landing-page/index.html" target="_blank">Landing pages</a></li>
+      <li><a href="../projects/tic-tac-toe/index.html" target="_blank">Tic-tac-toe</a></li>
+      <li><a href="../projects/currency converter/index.html" target="_blank">currency-converter</a></li>
+      <li><a href="../projects/calculator/index.html" target="_blank">Modern calculater</a></li>
+      <li><a href="../projects/spotify/index.html" target="_blank">spotify</a></li>
+    </ol>
+  </div>
+  <div class="footer-part-third">
+    <div class="heading-part-third">Lets join out team</div>
+    <ol class="join-team">
+      <li><a href="../join-team/join-team.html" target="_blank">Part-time</a></li>
+      <li><a href="../join-team/join-team.html" target="_blank">Full-time</a></li>
+      <li><a href="../join-team/join-team.html" target="_blank">Become a life long partner</a></li>
+      <li><a href="#">linkdin</a></li>
+      <li><a href="#">Upwork</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Freelancer.com</a></li>
+      <li><b>whatsapp</b><span>-</span>  03202677314</li>
+    </ol>
+  </div>
+ </footer>
+
+ <footer class="part-help">
+  <div class="heading-help-section">Help center</div>
+    <a href="../contact-us/contact.html">Help</a>
+ </footer>
+
+ <footer class="final-part-footer">
+  <i>&copy; 2025 <a href="#">Abbasi-Codes-Hub</a> — Designed & Developed with Excellence</i>
+  <b>Lets create your website and grow your business</b>
+ </footer>
+
+
+
+
+<script src="introduction-animate.js"></script>
+<script src="skills-updation.js"></script>
+<script src="reviews-logic.js"></script>
+<script src="email-subscription-logic.js"></script>
+<script src="faqs.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  // Initialize AOS
+  AOS.init({
+    duration: 800, // Animation duration
+    easing: 'ease-in-out', // Animation easing
+    once: true, // Whether animation should happen only once
+    mirror: false, // Whether elements should animate out while scrolling past them
+    offset: 100, // Offset (in px) from the original trigger point
+  });
+</script>
+</body>
+</html>
