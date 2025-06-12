@@ -1,3 +1,5 @@
+# Abbasi-codes-hub-porfolio-webpage-landscapes
+A portfolio webpage just for practice only for landscapes devices . You can use it.
 # Landscape-Only GitHub Portfolio Website 🌄💻
 
 This is a responsive developer portfolio website **exclusively optimized for landscape devices** such as tablets, laptops, and desktops.
@@ -12,10 +14,9 @@ This is a responsive developer portfolio website **exclusively optimized for lan
 
 ### 💻 Folder Structure in VS Code
 
-![Folder Structure](../../Pictures/home-card.png)
-![Folder Structure](../../Pictures/experties.png)
-![Folder Structure](../../Pictures/footer.png)
-
+![screenshot](home-card.png)
+![screenshot](experties.png)
+![screenshot](footer.png)
 
 ## 📁 Folder Structure
 
