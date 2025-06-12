@@ -1,0 +1,151 @@
+/* === Review Section Container === */
+.review-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e6e6e6;
+}
+
+/* === Review Form Box === */
+.review-form {
+  background: rgba(25, 25, 25, 0.9);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.review-form:hover {
+  transform: translateY(-5px);
+}
+
+.review-form h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Input Fields */
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: none;
+  background: #1a1a1a;
+  color: #f0f0f0;
+  font-size: 1rem;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.review-form input:hover,
+.review-form textarea:hover {
+  background: #222;
+  box-shadow: inset 0 0 10px rgba(0, 184, 255, 0.2);
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 6px 3px #00b8ff;
+  background: #121212;
+}
+
+/* Submit Button */
+.review-form button {
+  background: linear-gradient(135deg, #00b8ff, #006bff);
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(23, 180, 242, 0.719);
+  transition: all 0.3s ease;
+}
+
+.review-form button:hover {
+  background: linear-gradient(135deg, #0088cc, #0044cc);
+  box-shadow: 0 15px 35px rgba(0, 150, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* === Review List === */
+.review-list {
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.review-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* Each Review Item */
+.review-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #444;
+  transition: all 0.3s ease;
+}
+
+.review-item:hover {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding-left: 16px;
+  box-shadow: inset 0 0 10px rgba(11, 186, 255, 0.884);
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.review-item strong {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #00baff;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.review-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+/* === See More Button === */
+.see-more {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.see-more button {
+  background: linear-gradient(to right, #00b8ff, #007acc);
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+.see-more button:hover {
+  background: linear-gradient(to right, #006fbf, #004499);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 150, 255, 0.4);
+}

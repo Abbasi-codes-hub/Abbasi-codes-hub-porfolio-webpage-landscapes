@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../main-code/footers.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+                <span>Spotify</span>
+            </div>
+            <ul class="nav">
+                <li class="active"><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-search"></i> Search</li>
+                <li><i class="fas fa-book"></i> Your Library</li>
+                <li><i class="fas fa-plus-square"></i> Create Playlist</li>
+                <li><i class="fas fa-heart"></i> Liked Songs</li>
+            </ul>
+            <div class="playlists">
+                <h3>PLAYLISTS</h3>
+                <ul>
+                    <li>Today's Top Hits</li>
+                    <li>Discover Weekly</li>
+                    <li>Chill Hits</li>
+                    <li>Rock Classics</li>
+                    <li>Deep Focus</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="nav-buttons">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="user">
+                    <img src="../../assests/team-3.jpg" alt="User">
+                    <span>Abbasi-codes-hub</span>
+                </div>
+            </div>
+
+            <div class="content">
+                <h1>Good afternoon</h1>
+                <div class="playlist-grid">
+                    <div class="playlist-card">
+                        <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" alt="Playlist">
+                        <span>Today's Top Hits</span>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="../../assests/background.jpg" alt="Playlist">
+                        <span>Discover Weekly</span>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="../../assests/team-2.jpg" alt="Playlist">
+                        <span>Chill Hits</span>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="https://i.scdn.co/image/ab67706f00000002fe6d8d1019d5b302213e3730" alt="Playlist">
+                        <span>Rock Classics</span>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="https://i.scdn.co/image/ab67706f00000002a76a2ccb454ff0e1720a51a5" alt="Playlist">
+                        <span>Deep Focus</span>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="../../assests/team-4.jpg" alt="Playlist">
+                        <span>Instrumental Study</span>
+                    </div>
+                </div>
+
+                <h2>Made For You</h2>
+                <div class="album-grid">
+                    <div class="album-card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228" alt="Album">
+                        <span class="title">Happier Than Ever</span>
+                        <span class="artist">Billie Eilish</span>
+                    </div>
+                    <div class="album-card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e029ad3e9959f48d513886b8933" alt="Album">
+                        <span class="title">Sour</span>
+                        <span class="artist">Olivia Rodrigo</span>
+                    </div>
+                    <div class="album-card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02668e3aca3167e6e569a9aa20" alt="Album">
+                        <span class="title">Planet Her</span>
+                        <span class="artist">Doja Cat</span>
+                    </div>
+                    <div class="album-card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02e6f407c7f3a0ec98845e4431" alt="Album">
+                        <span class="title">Justice</span>
+                        <span class="artist">Justin Bieber</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player -->
+        <div class="player">
+            <div class="song-info">
+                <img src="https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228" alt="Album">
+                <div class="song-details">
+                    <span class="title">Happier Than Ever</span>
+                    <span class="artist">Billie Eilish</span>
+                </div>
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="player-controls">
+                <div class="controls">
+                    <button><i class="fas fa-random"></i></button>
+                    <button><i class="fas fa-step-backward"></i></button>
+                    <button class="play-btn"><i class="fas fa-pause"></i></button>
+                    <button><i class="fas fa-step-forward"></i></button>
+                    <button><i class="fas fa-redo"></i></button>
+                </div>
+                <div class="progress-bar">
+                    <span class="time">0:00</span>
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="time">3:30</span>
+                </div>
+            </div>
+            <div class="volume-controls">
+                <i class="fas fa-volume-up"></i>
+                <div class="volume-bar">
+                    <div class="volume-level"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer part 1 -->
+ <footer>
+  <div class="footer-part-one">
+    <div class="heading-part-one">Quick-links</div>
+    <ol class="short-links">
+      <li><a href="../blog/blog.html" target="_blank">Blogs</a></li>
+      <li><a href="#">projects</a></li>
+      <li><a href="../our team/out-team.html">our team</a></li>
+      <li><a href="#">Download CV</a></li>
+      <li><a href="https://github.com/Abbasi-codes-hub" target="_blank" rel="noopener noreferrer">Visit GitHub</a></li>
+
+      <li><a href="#">Visit-fiverr</a></li>
+      <li><a href="../about us/about-us.html" target="_blank">About us</a></li>
+      <li><a href="../contact-us/contact.html" target="_blank">contact us</a></li>
+    </ol>
+  </div>
+  <div class="footer-part-two">
+    <div class="heading-part-two">Projects</div>
+    <ol class="list-projects">
+      <li><a href="../projects/game scesior rock paer/index.html" target="_blank">Rock-sessior-paper</a></li>
+      <li><a href="../projects/landing-page/index.html" target="_blank">Landing pages</a></li>
+      <li><a href="../projects/tic-tac-toe/index.html" target="_blank">Tic-tac-toe</a></li>
+      <li><a href="../projects/currency converter/index.html" target="_blank">currency-converter</a></li>
+      <li><a href="../projects/calculator/index.html" target="_blank">Modern calculater</a></li>
+      <li><a href="../projects/spotify/index.html" target="_blank">spotify</a></li>
+    </ol>
+  </div>
+  <div class="footer-part-third">
+    <div class="heading-part-third">Lets join out team</div>
+    <ol class="join-team">
+      <li><a href="../join-team/join-team.html" target="_blank">Part-time</a></li>
+      <li><a href="../join-team/join-team.html" target="_blank">Full-time</a></li>
+      <li><a href="../join-team/join-team.html" target="_blank">Become a life long partner</a></li>
+      <li><a href="#">linkdin</a></li>
+      <li><a href="#">Upwork</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Freelancer.com</a></li>
+      <li><b>whatsapp</b><span>-</span>  03202677314</li>
+    </ol>
+  </div>
+ </footer>
+
+ <footer class="part-help">
+  <div class="heading-help-section">Help center</div>
+    <a href="../contact-us/contact.html">Help</a>
+ </footer>
+
+ <footer class="final-part-footer">
+  <i>&copy; 2025 <a href="#">Abbasi-Codes-Hub</a> — Designed & Developed with Excellence</i>
+  <b>Lets create your website and grow your business</b>
+ </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

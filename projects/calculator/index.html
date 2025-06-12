@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator glass">
+        <div class="history" id="history"></div>
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="backspace()"><i class="fas fa-backspace"></i></button>
+            <button onclick="appendToDisplay('%')">%</button>
+            <button onclick="appendToDisplay('/')"><i class="fas fa-divide"></i></button>
+
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')"><i class="fas fa-times"></i></button>
+
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')"><i class="fas fa-minus"></i></button>
+
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')"><i class="fas fa-plus"></i></button>
+
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()" class="equals">=</button>
+
+            <!-- Advanced Buttons -->
+            <button onclick="square()">x²</button>
+            <button onclick="squareRoot()">√x</button>
+            <button onclick="power()">x^y</button>
+            <button onclick="appendToDisplay('Math.PI')">π</button>
+            <button onclick="factorial()">x!</button>
+            <button onclick="sin()">sin</button>
+            <button onclick="cos()">cos</button>
+            <button onclick="tan()">tan</button>
+            <button onclick="log()">log</button>
+            <button onclick="appendToDisplay('Math.E')">e</button>
+            <!-- Inside <div class="buttons"> -->
+           <button onclick="toggleTheme()" class="theme-toggle-btn">
+           <i class="fas fa-moon"></i>
+          </button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

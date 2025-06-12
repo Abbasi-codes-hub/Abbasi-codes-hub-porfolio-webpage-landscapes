@@ -1,0 +1,166 @@
+/* RESET AND VARIABLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f0f0f0;
+    --calculator-bg: rgba(255, 255, 255, 0.8);
+    --button-bg: rgba(255, 255, 255, 0.7);
+    --button-hover: rgba(255, 255, 255, 0.9);
+    --text-color: #333;
+    --equals-bg: #ff9500;
+    --history-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    --bg-color: #000000;
+    --calculator-bg: rgba(40, 40, 40, 0.8);
+    --button-bg: rgba(60, 60, 60, 0.7);
+    --button-hover: rgba(80, 80, 80, 0.9);
+    --text-color: #fff;
+    --equals-bg: #ff9500;
+    --history-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* BODY & TOGGLE */
+body {
+    background: var(--bg-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s;
+}
+
+.theme-toggle-btn {
+    background: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle-btn:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-btn:active {
+    transform: translateY(0);
+}
+
+
+/* CALCULATOR MAIN CONTAINER */
+.calculator {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background: var(--calculator-bg);
+    border-radius: 20px;
+    padding: 25px;
+    width: auto;
+    min-width: 900px;
+    max-width: 1000px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s;
+}
+
+/* LEFT PANEL (Display + History) */
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#display {
+    height: 70px;
+    font-size: 32px;
+    padding: 15px;
+    text-align: right;
+    border: none;
+    border-radius: 12px;
+    background: var(--history-bg);
+    color: var(--text-color);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.history {
+    height: 40px;
+    font-size: 16px;
+    text-align: right;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* BUTTONS GRID */
+.buttons {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+/* BUTTON STYLING */
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: var(--button-bg);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* SPECIAL BUTTONS */
+.equals {
+    background: var(--equals-bg);
+    color: #fff;
+}
+
+.equals:hover {
+    background: #ffaa33;
+}
+
+/* GLASS EFFECT CLASS (OPTIONAL) */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+}
+
+/* RESPONSIVE FOR SMALLER SCREENS */
+@media (max-width: 960px) {
+    .calculator {
+        flex-direction: column;
+        min-width: 90%;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

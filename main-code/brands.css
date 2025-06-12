@@ -1,0 +1,58 @@
+/* === Section Container === */
+.companies-section {
+  padding: 80px 20px;
+  background: #000000;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* === Carousel Container === */
+.companies-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* === Track to animate === */
+.company-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 25s linear infinite;
+}
+
+/* === Individual Company Card === */
+.company-card {
+  flex: 0 0 auto;
+  background: rgba(6, 240, 244, 0.614);
+  color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px 40px;
+  margin: 0 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(57, 61, 65, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(2, 222, 237, 0.788);
+}
+
+/* === Keyframes for infinite scroll === */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

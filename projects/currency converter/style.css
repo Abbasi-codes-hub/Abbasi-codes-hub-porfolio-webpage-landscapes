@@ -1,0 +1,212 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(6, 4, 4);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+    height: 70vh;
+    width: 60vw;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 5rem;
+    user-select: none;
+    animation: fadeIn 0.6s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2),
+    0 0 50px rgba(255, 255, 255, 0.1);
+
+}
+
+/* Animated Gradient Border */
+.container::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -1;
+    border-radius: 5rem;
+    background: conic-gradient(
+        from 0deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        purple,
+        red
+    );
+    animation: rotateClockwise 6s linear infinite;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4.5rem;
+    z-index: -1;
+}
+
+/* Rotation Animations */
+@keyframes rotateClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2{
+    margin-top: 0.7rem;
+    color: rgba(137, 43, 226, 0.674);
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+
+}
+.amount{
+    margin-top: 1rem;
+}
+.amount p {
+    color: rgb(112, 112, 126);
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.amount input {
+    height: 2rem;
+    width: 40%;
+    margin-top: 0.2rem;
+    outline: none;
+    border: none;
+    border: 0.02rem solid lightslategray;
+    border-radius: 3rem;
+    text-align: center;
+    color: rgb(112, 112, 126);
+    background-color: rgb(50, 45, 45);
+    transition: all 0.3s ease;
+}
+
+.amount input:focus {
+    border-color: orange;
+    transform: scale(1.03);
+}
+
+.select-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 0.02rem solid lightgray; */
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.select-container:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 0.02rem solid lightgray;
+    
+}
+
+.select-container img{
+    font-size: 1.4rem;
+}
+.select-container select {
+    height: 2.7rem;
+    border: none;
+    outline: none;
+    width: 3rem;
+    text-align: center;
+    background-color: rgb(41, 38, 38);
+    color: white;
+}
+.select-container select option{
+    width: 100%;
+    background-color: rgb(67, 65, 63);
+}
+.from p {
+    margin-bottom: 1rem;
+    color: rgb(112, 112, 126);
+}
+.to p {
+    margin-bottom: 1rem;
+    color: rgb(112, 112, 126);
+}
+#main{
+    margin-top: 3rem;
+    font-size: 2rem;
+    opacity: 1;
+    color: orange;
+}
+.msg{
+    height: 2rem;
+    width: 100%;
+    line-height: 2rem;
+    margin-top: 1rem;
+    color: rgb(99, 99, 116);
+    font-size: 1rem;
+}
+.from, .to {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+#heading {
+  color: rgba(137, 43, 226, 0.674);
+  font-size: 1.6rem;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%; /* Ensures full width */
+  min-height: 3.7rem; /* Prevent jumpiness */
+  display: inline-block;
+  user-select: none;
+}
+#enter-amount::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+  color: rgb(112, 112, 126);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

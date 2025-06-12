@@ -1,0 +1,208 @@
+/* Resetting default */
+footer {
+  font-family: cursive;
+  color: #f1f1f1;
+}
+
+footer a {
+  color: #f1f1f193;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #00ffc8;
+}
+
+/* ========== Main Footer ========== */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #121212;
+  padding: 40px 60px;
+  border-top: 4px solid #00ffc8;
+}
+
+.footer-part-one,
+.footer-part-two,
+.footer-part-third {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+.heading-part-one,
+.heading-part-two,
+.heading-part-third {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00ffc8;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #00ffc8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.short-links,
+.list-projects,
+.join-team {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.short-links li,
+.list-projects li,
+.join-team li {
+  margin: 8px 0;
+}
+
+/* ========== Help Section ========== */
+.part-help {
+  background: #0f0f0f;
+  text-align: center;
+  padding: 30px;
+  border-top: 2px solid #444;
+}
+
+.heading-help-section {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00ffc8;
+  margin-bottom: 10px;
+}
+
+.part-help a {
+  display: inline-block;
+  background: #00ffc8;
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.part-help a:hover {
+  background: #00cc9c;
+}
+
+/* ========== Final Footer Note ========== */
+.final-part {
+  background: #000000;
+  color: #888;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+}
+
+.final-part i {
+  color: #ccc;
+  font-style: italic;
+}
+
+.final-part-footer{
+    height: 2rem;
+    width: 100vw;
+    text-align: center;
+}
+i{
+     text-align: center;
+}
+/* ========== Footer Media Queries ========== */
+
+/* Tablets (Portrait) - 768px to 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  footer {
+    padding: 30px 40px;
+  }
+  
+  .footer-part-one,
+  .footer-part-two,
+  .footer-part-third {
+    flex: 1 1 200px;
+    margin: 15px;
+  }
+  
+  .heading-part-one,
+  .heading-part-two,
+  .heading-part-third {
+    font-size: 18px;
+  }
+  
+  .part-help {
+    padding: 25px;
+  }
+}
+
+/* Tablets (Landscape) - 768px to 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  footer {
+    padding: 35px 50px;
+  }
+  
+  .footer-part-one,
+  .footer-part-two,
+  .footer-part-third {
+    flex: 1 1 220px;
+    margin: 15px;
+  }
+}
+
+/* Laptops/Small Desktops - 1025px to 1440px */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  footer {
+    padding: 40px 50px;
+  }
+  
+  .footer-part-one,
+  .footer-part-two,
+  .footer-part-third {
+    flex: 1 1 250px;
+    margin: 15px 20px;
+  }
+}
+
+/* Large Desktops - 1441px and above */
+@media only screen and (min-width: 1441px) {
+  footer {
+    padding: 50px 80px;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  
+  .footer-part-one,
+  .footer-part-two,
+  .footer-part-third {
+    flex: 1 1 300px;
+    margin: 20px 30px;
+  }
+  
+  .heading-part-one,
+  .heading-part-two,
+  .heading-part-third {
+    font-size: 22px;
+  }
+  
+  .short-links li,
+  .list-projects li,
+  .join-team li {
+    margin: 10px 0;
+    font-size: 17px;
+  }
+  
+  .part-help {
+    padding: 40px;
+  }
+  
+  .heading-help-section {
+    font-size: 20px;
+  }
+}
+
+/* Special adjustment for 2-column layout on medium tablets */
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .footer-part-third {
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
+}

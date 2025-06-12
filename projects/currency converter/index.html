@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Settings -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <meta name="description" content="Convert currencies instantly with our accurate and fast online currency converter tool." />
+  <meta name="keywords" content="currency converter, exchange rates, forex, money conversion, USD to INR, Euro to Dollar" />
+  <meta name="author" content="Thelion Economy" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="Now___1_-removebg-preview.png" type="image/png" />
+  <!-- Optional .ico fallback -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Stylesheets -->
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Open Graph (for Facebook, LinkedIn, etc.) -->
+  <meta property="og:title" content="Currency Converter" />
+  <meta property="og:description" content="Convert currencies instantly with real-time exchange rates." />
+  <meta property="og:image" content="https://yourwebsite.com/images/currency-preview.png" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Currency Converter" />
+  <meta name="twitter:description" content="Fast and accurate online currency conversion tool." />
+  <meta name="twitter:image" content="https://yourwebsite.com/images/currency-preview.png" />
+  <meta name="twitter:site" content="@yourTwitterHandle" />
+
+  <!-- Theme Color (for browser address bar color on mobile) -->
+  <meta name="theme-color" content="#0077cc" />
+
+</head>
+
+  <body>
+    <div class="container">
+      <h2 id="heading">Currency Converter</h2>
+      <form>
+        <div class="amount">
+          <p id="enter-amount">Enter Amount</p>
+          <input value="1" type="text" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <p id="from">From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png" />
+              <select name="from"></select>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right-arrow-left" id="main"></i>
+          <div class="to">
+            <p id="from">To</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/IN/flat/64.png" />
+              <select name="to"></select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">1USD = 80INR</div>
+      </form>
+    </div>
+    
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+    <script src="amountanimate.js"></script>
+  </body>
+</html>

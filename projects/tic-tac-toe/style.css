@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.winner-text{
+    height: 10em;
+    width: 40em;
+    background-color:transparent;
+    border-bottom:0.29em solid #fff;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+ 
+}
+.mesage{
+    color: rgb(235, 218, 107);
+    margin-bottom: 1em;
+    margin-top: 2em;
+    font-size: 1.5em;
+    color: #ada7c9;
+    text-shadow: 0 0 6px #504d5f,
+               0 0 12px #ada7c9;
+}
+.new-game{
+  padding: 0.45em 1.9em;
+  background-color: #ada7c9;
+  color: #161616;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor:pointer;
+
+  /* Box Shadow */
+  box-shadow: 0 4px 10px #ada7c9, 
+              0 2px 4px #ada7c9;
+
+  /* Optional: Smooth transition on hover */
+  transition: all 0.3s ease;
+}
+
+.new-game:hover {
+  box-shadow: 0 6px 14px #ada7c9, 
+              0 3px 6px #ada7c9;
+  transform: translateY(-4px); /* Slight lift */
+}
+
+body{
+    margin-top:1em;
+    text-align: center;
+    background-image: url(download.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+heading:focus{
+    outline: none;
+}
+.heading{
+    color: rgb(254, 255, 254);
+    font-size: 2rem;
+    text-overflow: ellipsis;
+    margin-left: 0.79rem;
+    cursor:progress;
+    user-select: none;
+}
+.span{
+    color: #aa00fecf;
+    font-size: 2rem;
+}
+#left-border-top{
+    border-top-left-radius:0.2em ;
+}
+#left-border-bottom{
+    border-bottom-left-radius:0.2em ; 
+}
+#right-border-bottom-right{
+    border-bottom-right-radius:0.2em   ;
+}
+#right-border-top{
+    border-top-right-radius:0.2em ;
+}
+main{
+    border:0.25rem solid  #5c5d5fcf;
+    border-radius: 0.92em ;
+    height: 30rem;
+    width: 80%;
+    margin: 1em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px #fff; /* Optional focus glow */
+}
+.restart{
+  padding: 0.45em 1.9em;
+  background-color: #ada7c9;
+  color: #161616;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+
+  /* Box Shadow */
+  box-shadow: 0 4px 10px #ada7c9, 
+              0 2px 4px #ada7c9;
+
+  /* Optional: Smooth transition on hover */
+  transition: all 0.3s ease;
+}
+
+.restart:hover {
+  box-shadow: 0 6px 14px #ada7c9, 
+              0 3px 6px #ada7c9;
+  transform: translateY(-4px); /* Slight lift */
+}
+.container{
+    border-left: 2px solid white;
+    border-bottom-left-radius:0.92em ;
+    border-top-left-radius:0.92em ;
+    background-color: #232330cf;
+    height:29.7rem;
+    width: 29.8rem;
+    display: flex;
+    align-items: center;
+    
+}
+.game{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3.1fr);
+    align-items: center;
+    justify-content: center;
+    column-gap: normal;
+
+}
+.box{
+    height: 9.9rem;
+    width: 10rem;
+    border: 1px solid rgba(41, 37, 37, 0.509);
+    background-color: #ffffff;
+    font-size: 6rem;
+    user-select: none;
+}
+box:focus{
+     outline: none;
+}
+span{
+    color: blueviolet;
+    font-size: 6rem;
+}
+#innertext{
+    color: black;
+    font-size: 6rem; ;
+}
+.final-display{
+    display: none;
+}
+/* Small phones (320px to 480px) */
+@media (max-width: 480px) {
+  .winner-text {
+    width: 90%;
+    height: auto;
+  }
+
+  .mesage {
+    font-size: 1.2em;
+  }
+
+  .heading, .span {
+    font-size: 1.5rem;
+  }
+
+  main {
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-radius: 0.5em;
+  }
+
+  .game {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .box {
+    height: 6rem;
+    width: 6rem;
+    font-size: 4rem;
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .winner-text {
+    width: 80%;
+    height: auto;
+  }
+
+  .mesage {
+    font-size: 1.4em;
+  }
+
+  .heading, .span {
+    font-size: 1.7rem;
+  }
+
+  main {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-radius: 0.7em;
+  }
+
+  .box {
+    height: 8rem;
+    width: 8rem;
+    font-size: 5rem;
+  }
+}
+
+/* Small laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .winner-text {
+    width: 70%;
+  }
+  .heading{
+    font-size: 1.4em;
+  }
+  .span{
+    font-size: 1.2em;
+  }
+
+  main {
+    height: auto;
+    flex-direction: row;
+    width: 85%;
+  }
+
+  .container {
+    width: 45%;
+    height: auto;
+  }
+
+  .box {
+    height: 9rem;
+    width: 9rem;
+    font-size: 5.5rem;
+  }
+  .restart{
+    margin-right: 2em;
+  }
+}
+
+/* Large laptops and desktops (1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  main {
+    width: 80%;
+    height: 30rem;
+  }
+
+  .container {
+    width: 30rem;
+    height: 29.7rem;
+  }
+
+  .box {
+    height: 9.9rem;
+    width: 10rem;
+  }
+}
+
+/* Extra large screens and TVs (1441px and up) */
+@media (min-width: 1441px) {
+  main {
+    width: 70%;
+    height: 35rem;
+  }
+
+  .container {
+    width: 35rem;
+    height: 34rem;
+  }
+
+  .box {
+    height: 11rem;
+    width: 11rem;
+    font-size: 6.5rem;
+  }
+}
+/* ✅ Fix for mobile layout (480px to 768px range) */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .heading {
+    margin-top: 40px; /* ✅ Heading ke upar 40px ka margin */
+  }
+
+  main {
+    flex-direction: column; /* ✅ Vertical layout */
+    gap: 1em; /* ✅ Space between container and buttons */
+    height: auto;
+    width: 95%;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-radius: 0.7em;
+    margin-bottom: 1em; /* ✅ Space below boxes */
+  }
+
+  .game {
+    grid-template-columns: 3 ,1fr; /* ✅ Boxes vertically stack hon */
+    grid-template-rows: repeat(3, 1fr); /* Extra vertical stack safety */
+    row-gap: 0; /* ✅ Remove vertical gap */
+    column-gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box {
+    margin: 0;
+    height: 20vh;
+    width: 30vw;
+    font-size: 4rem;
+    column-gap: 0;
+  }
+
+  .restart, .new-game {
+    margin-top: 1em; /* ✅ Buttons heading ya box se chipkay na hon */
+  }
+}
